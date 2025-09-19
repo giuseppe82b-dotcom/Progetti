@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'IA nella Didattica</title>
+    <style>
+        /* Stili Generali */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Contenitore Principale */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Intestazione */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #4a90e2;
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.3em;
+            font-weight: 300;
+        }
+
+        /* Griglia delle Creazioni */
+        .creations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* Card Singola Creazione */
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #e0e0e0; /* Colore placeholder */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: #aaa;
+            font-weight: bold;
+        }
+        
+        /* Placeholder per le immagini, puoi sostituire 'TEXT' con un'immagine reale */
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-content h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #4a90e2;
+            font-size: 1.6em;
+        }
+
+        .card-content p {
+            flex-grow: 1;
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 1em;
+        }
+
+        .card-link {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .card-link:hover {
+            background-color: #357abd;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>L'IA nella Didattica</h1>
+            <p>Spunti creativi per creare app utili alla didattica e al coinvolgimento</p>
+	    <p>Prof. Giuseppe Brunetti</p>
+
+        </header>
+
+        <main class="creations-grid">
+            <div class="card">
+                <div class="card-image">
+                    <span>Verifica</span>
+                </div>
+                <div class="card-content">
+                    <h2>VERIFICA DIGITALE</h2>
+                    <p>Un sistema, lato docente e lato alunno per creare test a risposta aperta, chiusa, multipla e testo da completare. Permette allo studente di svolgere il test, visionare i risultati e scaricare un file per il docente.</p>
+                    <a href="https://giuseppe82b-dotcom.github.io/Iniziale/" class="card-link" target="_blank">Vai al Progetto</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <span>Geometria</span>
+                </div>
+                <div class="card-content">
+                    <h2>LAVAGNA GEOMETRICA</h2>
+                    <p>Una lavagna studiata per tecnologia che permette di creare punti, rette e simulare il compasso.</p>
+                    <a href="https://giuseppe82b-dotcom.github.io/lavagna-geometrica/" class="card-link" target="_blank">Vai al Progetto</a>
+                </div>
+            </div>
+
+            <div class="card">
+                 <div class="card-image">
+                    <span>Mappe</span>
+                </div>
+                <div class="card-content">
+                    <h2>CREATORE MAPPE CONCETTUALI</h2>
+                    <p>Una piattaforma per creare mappe concettuali dotate di immagini (via url) che permetta di scaricarle in formato pdf.</p>
+                    <a href="https://giuseppe82b-dotcom.github.io/Creazione-mappe/" class="card-link" target="_blank">Vai al Progetto</a>
+                </div>
+            </div>
+
+            <div class="card">
+                 <div class="card-image">
+                    <span>Sondaggi</span>
+                </div>
+                <div class="card-content">
+                    <h2>PIATTAFORMA SONDAGGI</h2>
+                    <p>Un sistema lato docente e lato alunno che permetta di creare dei sondaggi da utilizzare in classe, senza ausilio di dispositivi extra per gli studenti.</p>
+                    <a href="https://giuseppe82b-dotcom.github.io/sondaggi_classe/" class="card-link" target="_blank">Vai al Progetto</a>
+                </div>
+            </div>
+
+            <div class="card">
+                 <div class="card-image">
+                    <span>Grafici</span>
+                </div>
+                <div class="card-content">
+                    <h2>PIANO CARTESIANO</h2>
+                    <p>Un piano cartesiano per visionare punti, rette e angoli.</p>
+                    <a href="https://giuseppe82b-dotcom.github.io/PIANO-CARTESIANO/" class="card-link" target="_blank">Vai al Progetto</a>
+                </div>
+            </div>
+
+            <div class="card">
+                 <div class="card-image">
+                    <span>Coding</span>
+                </div>
+                <div class="card-content">
+                    <h2>LIVE CODE EDITOR</h2>
+                    <p>Una piattaforma unica per scrivere in linguaggio html, css e javascript. Utile per la didattica del coding.</p>
+                    <a href="https://giuseppe82b-dotcom.github.io/editor_online/" class="card-link" target="_blank">Vai al Progetto</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 - Creazioni didattiche realizzate dal Prof.Brunetti Giuseppe con il supporto dell'IA Gemini.</p>
+ 	<p>Contatti: giuseppe82b@gmail.com</p>
+
+        </footer>
+    </div>
+
+</body>
+</html>
